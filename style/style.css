@@ -146,7 +146,7 @@ a:hover{
 	color: rgb(255, 255, 255);
   }
   .description .date{
-	  font-weight: bolder;
+	  /* font-weight: bolder; */
 	  margin-top: 20px;
 	  border-radius: 10px;
 	  background-color: #4a97f9;
