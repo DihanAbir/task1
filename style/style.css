@@ -2,10 +2,8 @@
 	padding: 0px;
 }
 :root{
-	--primary-color: #3582E4;
-	--secondary-color: #0650b1;
-	--Text2-color: #404040;
-	--Text-color: #7a7979;
+	--primary-color: #24244D;
+	--secondary-color: #323264;
 }
 a{
 	color: white;
@@ -21,7 +19,7 @@ a:hover{
 .border{
 	border:none!important;
 	border-radius: 10px;
-	box-shadow: 5px 10px 10px -8px #3582E4;
+	box-shadow: 5px 10px 10px -8px rgba(82,91,255,0.57)
 }
 .container-fluid {
     padding-right: 0px!important;
@@ -41,18 +39,18 @@ a:hover{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-	background: #5790da;
+	background: #b39cf5;
 	border-radius: 5px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-	background: #3582E4 ;
+	background: #9678EC ;
   }
 
 /* banner  */
 .bannerHeading{
-	color: var(--Text2-color);
+	color: var(--primary-color);
 	font-size: 54px;
 	font-weight: bolder;
 }
@@ -61,7 +59,7 @@ a:hover{
 	padding: 20px;
     font-size: 22px;
     font-weight: 600;
-	color: var(--Text-color);
+	color: var(--primary-color);
 }
 
 
@@ -108,7 +106,7 @@ a:hover{
 
   /* Common sections css  */
   .darbackg{
-    background-color: rgb(233, 233, 233);
+background-color: rgb(221, 221, 221);
   }
   .sectionHeader{
 
@@ -131,13 +129,13 @@ a:hover{
 	margin-top: 20px;
 	border-radius: 5px;
 	padding: 5px 20px;
-	color: rgb(255, 255, 255);
+	color: rgb(212, 212, 212);
   }
   .description .date{
 	  font-weight: bolder;
-	  margin-top: 20px;
-	  border-radius: 10px;
-	  background-color: #4a97f9;
+	  margin-top: 30px;
+	  border-radius: 15px;
+	  background-color: rgb(234, 114, 250);
 	  padding: 5px 20px;
   }
 
@@ -156,22 +154,20 @@ a:hover{
   }
   .img{
 	  
-	border-radius: 10px;
+	border-radius: 40px;
   }
   
   .overlay {
 	position: absolute;
-	bottom: 0px;
+	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: #3582E4;
+	background-color: #8270E6;
 	overflow: hidden;
 	width: 100%;
 	height: 0;
-  /* over lay botton border is here  */
-	/* border-top: 4px solid #006eff; */
-	border-top: 0px solid #006eff;
-	border-radius: 10px; 
+	border-top: 4px solid rgb(151, 82, 219);
+	border-radius: 20px; 
 	transition: .5s ease;
   }
   
@@ -218,7 +214,7 @@ a:hover{
     right: 39px;
     z-index: 98;
     padding: 21px;
-    background-color: #3582E4;
+    background-color: rgb(151, 82, 219);
 }
 
 .js .cd-top--fade-out {
@@ -250,11 +246,11 @@ a:hover{
 	border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
     background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
-    background-color: #3582E4;
+    background-color: rgb(151, 82, 219);
     background-color: hsla(var(--cd-color-3-h), var(--cd-color-3-s), var(--cd-color-3-l), 0.8)
 }
 .cd-top:hover, #toTopBtn:hover{
-	background-color: #6198e0;
+	background-color: rgb(153, 104, 202);
 }
 
 .height {
