@@ -1,0 +1,25 @@
+@media (min-width: 576px) { 
+.review .col-12{
+	width: 100%;
+	margin: 0 auto;
+}
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+.fa-angle-left:before {
+    content: "\f104";
+    margin-left: 100px;
+}
+
+
+
+
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
