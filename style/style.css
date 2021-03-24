@@ -21,8 +21,9 @@ a{
 .text-grey{
   font-family: 'Roboto', sans-serif!important;
 	font-size: 18px;
+  font-weight: 500;
   padding: 0px 40px;
-	color: rgb(160, 160, 160);
+	color: rgb(119, 118, 118);
 }
 a:hover{
 	text-decoration: none;
@@ -30,13 +31,42 @@ a:hover{
 }
 .border{
 	border:none!important;
-	border-radius: 10px;
-	box-shadow: 5px 6px 10px -5px #98c5ff96;
+	border-radius: 4px;
 }
 .container-fluid {
     padding-right: 0px!important;
     padding-left: 0px!important;
 }
+.no-padding{
+  padding: 0px 5px!important;
+	color: rgb(221, 216, 216)!important;
+}
+.nowrap {
+  white-space: nowrap ;
+}
+
+/* menu */
+ul li{
+  padding: 10px 20px;
+  border-right: 2px dashed rgb(231, 231, 231);
+}
+ul li:last-child{
+  padding: 10px 20px;
+  border-right: none;
+}
+ul li a{
+  /* font-family: initial ; */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  color: rgb(78, 78, 78);
+  font-size: 15px;
+  font-weight: 600;
+}
+ul li a:hover{
+  color: black;
+}
+
+
 
 /* Scroll bar css  */
 ::-webkit-scrollbar {
@@ -52,7 +82,7 @@ a:hover{
   /* Handle */
   ::-webkit-scrollbar-thumb {
 	background: #5790da;
-	border-radius: 5px;
+	border-radius: 4px;
   }
   
   /* Handle on hover */
@@ -62,26 +92,47 @@ a:hover{
 
 /* banner  */
 .bannerHeading {
-  color: var(--Text2-color);
+  margin-top: 15%;
+  color: rgb(0, 2, 22);
   font-family: 'Blinker', sans-serif;
   font-size: 48px;
   font-weight: bolder;
   margin-top: -30px;
+  letter-spacing: 2px;
+  word-spacing: 10px;
 }
 .banner-p {
-  margin-top: 25%;
+  margin-bottom: 10%;
   padding: 28px;
   font-size: 17px;
   font-weight: 600;
-  color: var(--Text-color);
+  color: rgb(53, 51, 51);
 }
 
 
 .col-6.banner-title {
+  font-family: cursive!important;
     height: 70vh;
 }
 .banner-section{
+
 	padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-section::before {
+  content: "";
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;  
+  opacity: .5; 
+  z-index: -1;
+  background: url('../image/960x0.jpg_fit=scale.jpeg') ;
+  background-size: cover;
+  background-position: center;
 }
 
 .banner-img{
@@ -105,7 +156,7 @@ a:hover{
 	  background-color: var(--primary-color);
 	  color: white;
 	  border: none;
-	  border-radius: 10px;
+	  border-radius: 4px;
 	  outline: none;
   }
   .buttonCus:hover{
@@ -141,15 +192,15 @@ a:hover{
   }
   .description .title{
 	margin-top: 20px;
-	border-radius: 5px;
+	border-radius: 4px;
 	padding: 5px 20px;
 	color: rgb(255, 255, 255);
   }
   .description .date{
 	  /* font-weight: bolder; */
 	  margin-top: 20px;
-	  border-radius: 10px;
-	  background-color: #4a97f9;
+	  border-radius: 4px;
+	  background-color: #02484bdc;
 	  padding: 5px 20px;
   }
 
@@ -169,7 +220,7 @@ a:hover{
   }
   .img{
     width: 100%;
-	border-radius: 10px;
+	border-radius: 4px;
   }
   
   .overlay {
@@ -178,14 +229,31 @@ a:hover{
 	bottom: 0px;
 	left: 0;
 	right: 0;
-	background-color: #3582E4;
+	background-color: #4b8de4; 
+  color:white;
+	overflow: hidden;
+	width: 100%;
+	height: 0;
+  /* over lay botton border is here  */
+	/* border-top: 4px solid #006eff; */
+	border-top: 0px solid rgb(22, 121, 134);
+	border-radius: 4px; 
+	transition: .5s ease;
+  }
+  .overlydiv:hover .overlay {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	background-color: rgb(22, 121, 134);
 	overflow: hidden;
 	width: 100%;
 	height: 0;
   /* over lay botton border is here  */
 	/* border-top: 4px solid #006eff; */
 	border-top: 0px solid #006eff;
-	border-radius: 10px; 
+	border-radius: 4px; 
 	transition: .5s ease;
   }
   
@@ -217,7 +285,6 @@ a:hover{
 		margin-left: 8px;
 	  color: #5cbbe0!important;
   }
-
   /* ---------------------------------------scroll css  */
 
 
@@ -261,7 +328,7 @@ a:hover{
     height: var(--cd-back-to-top-size);
     width: 40px;
     width: var(--cd-back-to-top-size);
-	border-radius: 5px;
+	border-radius: 4px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
     background: url(https://res.cloudinary.com/dxfq3iotg/image/upload/v1571057658/cd-top-arrow.svg) no-repeat center 50%;
     background-color: #3582E4;
