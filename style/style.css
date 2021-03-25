@@ -91,19 +91,21 @@ ul li a:hover{
   }
 
 /* banner  */
+.bannerHeading2 {
+  margin-top: 10%!important;
+
+}
 .bannerHeading {
-  margin-top: 15%;
   color: rgb(0, 2, 22);
   font-family: 'Blinker', sans-serif;
   font-size: 48px;
   font-weight: bolder;
-  margin-top: -30px;
   letter-spacing: 2px;
   word-spacing: 10px;
 }
 .banner-p {
-  margin-bottom: 10%;
-  padding: 28px;
+  margin-bottom: 6%;
+  padding: 8px 40px;
   font-size: 17px;
   font-weight: 600;
   color: rgb(53, 51, 51);
